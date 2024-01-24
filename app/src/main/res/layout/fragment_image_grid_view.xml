@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radio_group_select_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_radio_date"
+                android:checked="true"
+                android:textSize="8pt"
+                />
+            <RadioButton android:id="@+id/radio_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_radio_path"
+                android:checked="false"
+                android:textSize="8pt"
+                />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/delete_batch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:text="@string/blank"
+            android:visibility="visible">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/button_list_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/button"
+            android:layout_toLeftOf="@id/delete_batch"
+            android:layout_toStartOf="@id/delete_batch"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_refresh_black_24dp"
+            android:text="@string/blank"
+            android:visibility="visible">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/download_batch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/button"
+            android:layout_toLeftOf="@id/button_list_refresh"
+            android:layout_toStartOf="@id/button_list_refresh"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_file_download_black_24dp"
+            android:text="@string/blank"
+            android:visibility="visible">
+        </ImageButton>
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/radio_group_select_category"
+            android:layout_toEndOf="@id/radio_group_select_category"
+            android:layout_toLeftOf="@id/download_batch"
+            android:layout_toStartOf="@id/download_batch"
+            android:textSize="8pt"
+            />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="80dp"
+        android:horizontalSpacing="2dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="2dp" >
+    </GridView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>

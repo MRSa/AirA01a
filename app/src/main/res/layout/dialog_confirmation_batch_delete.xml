@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/label_batch_delete_info_margin0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            />
+        <TextView
+            android:id="@+id/label_batch_delete_confirmation_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="8pt"
+            android:text="@string/comfirm_batch_delete_message"
+            />
+        <TextView
+            android:id="@+id/label_batch_delete_info_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            />
+        <CheckBox android:id="@+id/radio_delete__raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_delete_with_raw"
+            android:checked="false"
+            android:textSize="8pt"
+            android:visibility="invisible"
+            />
+        <CheckBox android:id="@+id/radio_delete_only_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_delete_only_raw"
+            android:checked="false"
+            android:textSize="8pt"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/label_batch_delete_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="4dp"
+            />
+        <TextView
+            android:id="@+id/label_batch_delete_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            />
+    </LinearLayout>
+</ScrollView>

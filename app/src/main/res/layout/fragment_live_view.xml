@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true">
+        
+	    <RelativeLayout
+	        android:layout_width="45dp"
+	        android:layout_height="match_parent"
+			android:layout_weight="0"
+			android:background="@color/background_dark" >
+
+            <ImageView
+                android:id="@+id/showPlaybackImageView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+                android:layout_marginTop="35dp"
+                android:clickable="true"
+				android:focusable="true"
+                android:contentDescription="play"
+                android:src="@drawable/btn_ic_photo_library_2x"
+                android:gravity="center" />
+
+	        <ImageView
+	            android:id="@+id/batteryLevelImageView"
+	            android:layout_width="match_parent"
+	            android:layout_height="20dp"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+	            android:layout_marginBottom="4dp"
+	            android:gravity="center" />
+	
+	        <TextView
+	            android:id="@+id/remainingRecordableImagesTextView"
+	            android:layout_width="match_parent"
+	            android:layout_height="20dp"
+	            android:layout_above="@+id/batteryLevelImageView"
+	            android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+	            android:gravity="center_horizontal"
+	            android:text=""
+	            android:textColor="@android:color/white"
+	            android:textSize="14sp" />
+
+			<TextView
+				android:id="@+id/informationTextView"
+				android:layout_width="match_parent"
+				android:layout_height="20dp"
+				android:layout_above="@+id/remainingRecordableImagesTextView"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:gravity="center_horizontal"
+				android:layout_marginBottom="0dp"
+				android:text=" "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/holo_green_dark"
+				android:textSize="12sp" />
+
+			<TextView
+				android:id="@+id/warningTextView"
+				android:layout_width="match_parent"
+				android:layout_height="20dp"
+				android:layout_above="@+id/informationTextView"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:gravity="center_horizontal"
+				android:layout_marginBottom="0dp"
+				android:text=" "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/holo_orange_light"
+				android:textSize="12sp" />
+
+			<TextView
+				android:id="@+id/otherTextView"
+				android:layout_width="match_parent"
+				android:layout_height="20dp"
+				android:layout_above="@+id/warningTextView"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:gravity="center_horizontal"
+				android:layout_marginBottom="0dp"
+				android:text=" "
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@android:color/holo_blue_light"
+				android:textSize="12sp" />
+
+			<ImageView
+				android:id="@+id/zoomInImageView"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:clickable="true"
+				android:focusable="true"
+				android:contentDescription="zoomin"
+				android:src="@drawable/btn_ic_add_circle_outline_2x"
+				android:gravity="center"
+				android:visibility="invisible"
+				android:layout_below="@+id/showPlaybackImageView"
+				android:layout_marginTop="10dp"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true" />
+
+			<ImageView
+				android:id="@+id/zoomOutImageView"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:clickable="true"
+				android:focusable="true"
+				android:contentDescription="zoomout"
+				android:src="@drawable/btn_ic_remove_circle_outline_2x"
+				android:gravity="center"
+				android:visibility="invisible"
+				android:layout_marginBottom="5dp"
+				android:layout_above="@+id/otherTextView"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true" />
+
+	    </RelativeLayout>
+        
+	    <view
+	        class="jp.osdn.gokigen.aira01a.liveview.CameraLiveImageView"
+	        android:id="@+id/cameraLiveImageView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center" />
+	    
+	    <RelativeLayout
+	        android:layout_width="80dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0"
+	        android:background="@color/background_dark" >
+
+			<TextView
+				android:id="@+id/showControlPanelTextView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentTop="true"
+				android:gravity="center_horizontal"
+				android:layout_marginTop="4dp"
+				android:clickable="true"
+				android:focusable="true"
+				android:visibility="invisible"
+				android:text="@string/show_panel"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@android:color/darker_gray"
+				android:textSize="12sp" />
+
+            <ImageView
+	            android:id="@+id/shutterImageView"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:gravity="center"
+	            android:clickable="true"
+				android:focusable="true"
+	            android:scaleType="fitCenter"
+	            android:src="@drawable/btn_shutter" />
+
+            <ImageView
+                android:id="@+id/saveLoadImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@id/showControlPanelTextView"
+                android:layout_alignStart="@id/showControlPanelTextView"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="start"
+                android:clickable="true"
+				android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_ic_description_2x" />
+
+            <ImageView
+                android:id="@+id/settingImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/showControlPanelTextView"
+                android:layout_alignEnd="@id/showControlPanelTextView"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="end"
+                android:clickable="true"
+				android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_ic_settings_2x" />
+
+            <ImageView
+				android:id="@+id/aelockImageView"
+				android:layout_width="32dp"
+				android:layout_height="16dp"
+				android:layout_above="@id/shutterImageView"
+				android:layout_centerHorizontal="true"
+				android:layout_marginBottom="8dp"
+				android:gravity="center"
+				android:clickable="true"
+                android:focusable="true"
+				android:scaleType="fitCenter"
+				android:src="@drawable/btn_ae_lock" />
+
+	        <ImageView
+	            android:id="@+id/unlockImageView"
+	            android:layout_width="35dp"
+	            android:layout_height="35dp"
+	            android:layout_below="@id/shutterImageView"
+				android:layout_alignRight="@id/showControlPanelTextView"
+				android:layout_alignEnd="@id/showControlPanelTextView"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="15dp"
+	            android:gravity="center"
+	            android:clickable="true"
+                android:focusable="true"
+	            android:scaleType="fitCenter"
+	            android:src="@drawable/btn_touch_off" />
+
+			<ImageView
+				android:id="@+id/magnifyImageView"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:layout_below="@id/shutterImageView"
+				android:layout_alignLeft="@id/showControlPanelTextView"
+				android:layout_alignStart="@id/showControlPanelTextView"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginStart="5dp"
+				android:gravity="center"
+				android:clickable="true"
+                android:focusable="true"
+				android:scaleType="fitCenter"
+				android:visibility="visible"
+				android:src="@drawable/btn_ic_pageview" />
+
+			<TextView
+				android:id="@+id/focalLengthTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="0mm"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginBottom="4dp"
+				android:clickable="true"
+                android:focusable="true"
+				android:textColor="@android:color/darker_gray"
+				/>
+
+			<ImageView
+				android:id="@+id/manualFocusImageView"
+				android:layout_width="32dp"
+				android:layout_height="16dp"
+				android:layout_above="@id/focalLengthTextView"
+				android:layout_centerHorizontal="true"
+				android:layout_marginBottom="3dp"
+				android:gravity="center"
+				android:clickable="true"
+                android:focusable="true"
+				android:scaleType="fitCenter"
+				android:src="@drawable/btn_manual_focus" />
+
+			<ImageView
+				android:id="@+id/selfTimerImageView"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_above="@id/manualFocusImageView"
+				android:layout_alignLeft="@id/unlockImageView"
+				android:layout_alignStart="@id/unlockImageView"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginStart="5dp"
+				android:layout_marginBottom="20dp"
+				android:gravity="center"
+				android:clickable="true"
+				android:focusable="true"
+				android:scaleType="fitCenter"
+				android:visibility="visible"
+				android:src="@drawable/btn_ic_self_timer" />
+
+
+		</RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+		android:id="@+id/controlPanelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:background="@color/background_translucent_white" >
+
+        <ImageView
+            android:id="@+id/drivemodeImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/icn_drive_setting_single" />
+
+        <TextView
+            android:id="@+id/takemodeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Take"
+            android:textColor="@color/setting_text_color"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/shutterSpeedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="S#"
+            android:textColor="@color/setting_text_color"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/apertureValueTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="F#"
+            android:textColor="@color/setting_text_color"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/exposureCompensationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="EV#"
+            android:textColor="@color/setting_text_color"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/isoSensitivityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="ISO#"
+            android:textColor="@color/setting_text_color"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+		<TextView
+			android:id="@+id/aeModeTextView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+            android:focusable="true"
+			android:text="AE"
+			android:textColor="@color/setting_text_color"
+			android:textStyle="bold"
+			android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/whiteBalanceImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/icn_wb_setting_wbauto" />
+
+		<TextView
+			android:id="@+id/hideControlPanelTextView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+            android:focusable="true"
+			android:text="@string/hide_panel"
+			android:textColor="@color/background_dark"
+			android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

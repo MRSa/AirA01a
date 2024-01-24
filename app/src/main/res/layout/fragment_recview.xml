@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <RelativeLayout
+	        android:id="@+id/view1"
+	        android:layout_width="48dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0"
+	        android:background="@color/background_dark" >
+	    </RelativeLayout>
+	
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@android:color/black"
+	        android:gravity="center"
+	        tools:ignore="ContentDescription" />
+	
+	    <RelativeLayout
+	        android:id="@+id/view2"
+	        android:layout_width="95dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0"
+	        android:background="@color/background_dark" >
+	    </RelativeLayout>
+	        
+	</LinearLayout>
+
+	<ImageView
+	    android:id="@+id/view3"
+	    android:layout_width="44dp"
+	    android:layout_height="44dp"
+	    android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="5dp"
+		android:layout_marginStart="5dp"
+	    android:layout_marginTop="5dp"
+	    android:padding="7dp"
+	    android:clickable="true"
+		android:focusable="true"
+	    android:contentDescription="camera"
+	    android:src="@drawable/btn_camera"
+	    tools:ignore="HardcodedText" />
+
+</RelativeLayout>

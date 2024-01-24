@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:compat="http://schemas.android.com/apk/res-auto" >
+
+	<item android:id="@+id/action_get_information_raw"
+		compat:showAsAction="ifRoom"
+		android:icon="@android:drawable/ic_menu_info_details"
+		android:title="@string/action_get_information"
+		android:visible="true">
+	</item>
+
+	<item android:id="@+id/action_delete_raw"
+		compat:showAsAction="ifRoom"
+		android:icon="@android:drawable/ic_menu_delete"
+		android:title="@string/action_delete_picture"
+		android:visible="false">
+	</item>
+
+    <item android:id="@+id/action_download_with_raw"
+        compat:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/action_download"
+        android:visible="true" >
+        <menu>
+		    <item
+		        android:id="@+id/action_download_original_size_raw"
+		        compat:showAsAction="never"
+		        android:title="@string/action_download_original_size"/>
+		    
+		    <item
+		        android:id="@+id/action_download_2048x1536_raw"
+		        compat:showAsAction="never"
+		        android:title="@string/action_download_2048x1536"/>
+		    
+		    <item
+		        android:id="@+id/action_download_1920x1440_raw"
+		        compat:showAsAction="never"
+		        android:title="@string/action_download_1920x1440"/>
+		    
+		    <item
+		        android:id="@+id/action_download_1600x1200_raw"
+		        compat:showAsAction="never"
+		        android:title="@string/action_download_1600x1200"/>
+		    
+		    <item
+			android:id="@+id/action_download_1024x768_raw"
+			compat:showAsAction="never"
+			android:title="@string/action_download_1024x768"/>
+
+			<!---->
+			<item
+				android:id="@+id/action_download_raw"
+				compat:showAsAction="never"
+				android:title="@string/action_download_raw"/>
+			<!---->
+        </menu>
+    </item>
+
+</menu>

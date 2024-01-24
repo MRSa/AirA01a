@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="live_view_quality">
+        <item >QVGA (320x240)</item>
+        <item >VGA (640x480)</item>
+        <item >SVGA (800x600)</item>
+        <item >XGA (1024x768)</item>
+        <item>QUAD VGA (1280x960)</item>
+    </string-array>
+
+    <string-array name="live_view_quality_value">
+        <item >QVGA</item>
+        <item >VGA</item>
+        <item >SVGA</item>
+        <item >XGA</item>
+        <item >QUAD_VGA</item>
+    </string-array>
+
+    <string-array name="camera_property">
+        <item>TAKEMODE</item>
+        <item>TAKE_DRIVE</item>
+        <item>APERTURE</item>
+        <item>SHUTTER</item>
+        <item>EXPREV</item>
+        <item>ISO</item>
+        <item>WB</item>
+        <item>BATTERY_LEVEL</item>
+    </string-array>
+
+    <string-array name="sound_volume_level">
+        <item >OFF</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+    </string-array>
+
+    <string-array name="sound_volume_level_value">
+        <item >OFF</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+    </string-array>
+
+    <string-array name="face_scan">
+        <item >オフ</item>
+        <item >オン</item>
+        <item >瞳検出</item>
+    </string-array>
+
+    <string-array name="face_scan_value">
+        <item >FACE_SCAN_OFF</item>
+        <item >FACE_SCAN_ON</item>
+        <item >FACE_SCAN_NEAR</item>
+    </string-array>
+    <string-array name="image_size">
+        <item>4608x3456</item>
+        <item>3200x2400</item>
+        <item>2560x1920</item>
+        <item>1920x1440</item>
+        <item>1600x1200</item>
+        <item>1280x960</item>
+        <item>1024x768</item>
+        <item>640x480</item>
+    </string-array>
+
+    <string-array name="image_size_value">
+        <item>4608x3456</item>
+        <item>3200x2400</item>
+        <item>2560x1920</item>
+        <item>1920x1440</item>
+        <item>1600x1200</item>
+        <item>1280x960</item>
+        <item>1024x768</item>
+        <item>640x480</item>
+    </string-array>
+
+    <string-array name="compressibility_ratio">
+        <item>Super Fine</item>
+        <item>Fine</item>
+        <item>Normal</item>
+        <item>Basic</item>
+    </string-array>
+
+    <string-array name="compressibility_ratio_value">
+        <item>CMP_2_7</item>
+        <item>CMP_4</item>
+        <item>CMP_8</item>
+        <item>CMP_12</item>
+    </string-array>
+
+    <string-array name="shooting_velocity">
+        <item>1fps</item>
+        <item>2fps</item>
+        <item>3fps</item>
+        <item>4fps</item>
+        <item>5fps</item>
+        <item>6fps</item>
+        <item>7fps</item>
+        <item>8fps</item>
+        <item>9fps</item>
+        <item>10fps</item>
+    </string-array>
+
+    <string-array name="shooting_velocity_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="recently_art_filter">
+        <item>ポップアート</item>
+        <item>ファンタジックフォーカス</item>
+        <item>デイドリーム</item>
+        <item>ライトトーン</item>
+        <item>ラフモノクローム</item>
+        <item>トイフォト</item>
+        <item>ジオラマ</item>
+        <item>クロスプロセス</item>
+        <item>ジェントルセピア</item>
+        <item>ドラマチックトーン</item>
+        <item>リーニュクレール</item>
+        <item>ウォーターカラー</item>
+        <item>ヴィンテージ</item>
+        <item>パートカラー</item>
+        <!-- <item>(ブラケット)</item> -->
+    </string-array>
+
+    <string-array name="recently_art_filter_value">
+        <item>POPART</item>
+        <item>FANTASIC_FOCUS</item>
+        <item>DAYDREAM</item>
+        <item>LIGHT_TONE</item>
+        <item>ROUGH_MONOCHROME</item>
+        <item>TOY_PHOTO</item>
+        <item>MINIATURE</item>
+        <item>CROSS_PROCESS</item>
+        <item>GENTLE_SEPIA</item>
+        <item>DRAMATIC_TONE</item>
+        <item>LIGNE_CLAIR</item>
+        <item>PASTEL</item>
+        <item>VINTAGE</item>
+        <item>PARTCOLOR</item>
+        <!-- <item>ART_BKT</item> -->
+    </string-array>
+
+    <array name="drivemode_icons">
+        <item>@drawable/icn_drive_setting_single</item>
+        <item>@drawable/icn_drive_setting_seq_l</item>
+    </array>
+
+    <string-array name="take_drive">
+        <item>DRIVE_NORMAL</item>
+        <item>DRIVE_CONTINUE</item>
+    </string-array>
+
+    <array name="whitebarance_icons">
+        <item>@drawable/icn_wb_setting_wbauto</item>
+        <item>@drawable/icn_wb_setting_16</item>
+        <item>@drawable/icn_wb_setting_17</item>
+        <item>@drawable/icn_wb_setting_18</item>
+        <item>@drawable/icn_wb_setting_20</item>
+        <item>@drawable/icn_wb_setting_35</item>
+        <item>@drawable/icn_wb_setting_64</item>
+        <item>@drawable/icn_wb_setting_512</item>
+    </array>
+
+    <string-array name="wb">
+        <item>WB_AUTO</item>
+        <item>MWB_SHADE</item>
+        <item>MWB_CLOUD</item>
+        <item>MWB_FINE</item>
+        <item>MWB_LAMP</item>
+        <item>MWB_FLUORESCENCE1</item>
+        <item>MWB_WATER_1</item>
+        <item>WB_CUSTOM1</item>
+    </string-array>
+
+    <array name="batterylevel_icons">
+        <item>@drawable/tt_icn_battery_unknown</item>
+        <item>@drawable/tt_icn_battery_charge</item>
+        <item>@drawable/tt_icn_battery_empty</item>
+        <item>@drawable/tt_icn_battery_half</item>
+        <item>@drawable/tt_icn_battery_middle</item>
+        <item>@drawable/tt_icn_battery_full</item>
+        <item>@drawable/tt_icn_battery_supply_empty</item>
+        <item>@drawable/tt_icn_battery_supply_half</item>
+        <item>@drawable/tt_icn_battery_supply_middle</item>
+        <item>@drawable/tt_icn_battery_supply_full</item>
+    </array>
+
+    <string-array name="battery_level">
+        <item>UNKNOWN</item>
+        <item>CHARGE</item>
+        <item>EMPTY</item>
+        <item>WARNING</item>
+        <item>LOW</item>
+        <item>FULL</item>
+        <item>EMPTY_AC</item>
+        <item>SUPPLY_WARNING</item>
+        <item>SUPPLY_LOW</item>
+        <item>SUPPLY_FULL</item>
+    </string-array>
+
+    <string-array name="prop_colortone">
+        <item>FLAT</item>
+        <item>NATURAL</item>
+        <item>モノトーン</item>
+        <item>Portrait</item>
+        <item>i-Finish</item>
+        <item>Vivid</item>
+        <item>eポートレート</item>
+        <item>カラークリエーター</item>
+        <item>ポップアート</item>
+        <item>ファンタジックフォーカス</item>
+        <item>デイドリーム</item>
+        <item>ライトトーン</item>
+        <item>ラフモノクローム</item>
+        <item>トイフォト</item>
+        <item>ジオラマ</item>
+        <item>クロスプロセス</item>
+        <item>ジェントルセピア</item>
+        <item>ドラマチックトーン</item>
+        <item>リーニュークレール</item>
+        <item>ウォーターカラー</item>
+        <item>ヴィンテージ</item>
+        <item>パートカラー</item>
+    </string-array>
+
+    <string-array name="prop_colortone_value">
+        <item>FLAT</item>
+        <item>NATURAL</item>
+        <item>Monotone</item>
+        <item>Portrait</item>
+        <item>I_FINISH</item>
+        <item>VIVID</item>
+        <item>ePortrait</item>
+        <item>COLOR_CREATOR</item>
+        <item>POPART</item>
+        <item>FANTASIC_FOCUS</item>
+        <item>DAYDREAM</item>
+        <item>LIGHT_TONE</item>
+        <item>ROUGH_MONOCHROME</item>
+        <item>TOY_PHOTO</item>
+        <item>MINIATURE</item>
+        <item>CROSS_PROCESS</item>
+        <item>GENTLE_SEPIA</item>
+        <item>DRAMATIC_TONE</item>
+        <item>LIGNE_CLAIR</item>
+        <item>PASTEL</item>
+        <item>VINTAGE</item>
+        <item>PARTCOLOR</item>
+    </string-array>
+
+    <string-array name="prop_tone_control">
+        <item>-7</item>
+        <item>-6</item>
+        <item>-5</item>
+        <item>-4</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+        <item>+5</item>
+        <item>+6</item>
+        <item>+7</item>
+    </string-array>
+
+    <string-array name="prop_tone_control_value">
+        <item>-7</item>
+        <item>-6</item>
+        <item>-5</item>
+        <item>-4</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+        <item>+5</item>
+        <item>+6</item>
+        <item>+7</item>
+    </string-array>
+
+    <string-array name="prop_monotone_filter">
+        <item>通常</item>
+        <item>黄</item>
+        <item>オレンジ</item>
+        <item>赤</item>
+        <item>緑</item>
+    </string-array>
+
+    <string-array name="prop_monotone_filter_value">
+        <item>NORMAL</item>
+        <item>YELLOW</item>
+        <item>ORANGE</item>
+        <item>RED</item>
+        <item>GREEN</item>
+    </string-array>
+
+    <string-array name="prop_monotone_color">
+        <item>白黒</item>
+        <item>セピア</item>
+        <item>青味</item>
+        <item>紫味</item>
+        <item>緑味</item>
+    </string-array>
+
+    <string-array name="prop_monotone_color_value">
+        <item>NORMAL</item>
+        <item>LIKE_SEPIA</item>
+        <item>LIKE_BLUE</item>
+        <item>LIKE_PURPLE</item>
+        <item>LIKE_GREEN</item>
+    </string-array>
+
+    <string-array name="prop_color_creator_color">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+    </string-array>
+
+    <array name="prop_color_creator_color_icon">
+        <item>@drawable/creatorcolor00</item>
+        <item>@drawable/creatorcolor01</item>
+        <item>@drawable/creatorcolor02</item>
+        <item>@drawable/creatorcolor03</item>
+        <item>@drawable/creatorcolor04</item>
+        <item>@drawable/creatorcolor05</item>
+        <item>@drawable/creatorcolor06</item>
+        <item>@drawable/creatorcolor07</item>
+        <item>@drawable/creatorcolor08</item>
+        <item>@drawable/creatorcolor09</item>
+        <item>@drawable/creatorcolor10</item>
+        <item>@drawable/creatorcolor11</item>
+        <item>@drawable/creatorcolor12</item>
+        <item>@drawable/creatorcolor13</item>
+        <item>@drawable/creatorcolor14</item>
+        <item>@drawable/creatorcolor15</item>
+        <item>@drawable/creatorcolor16</item>
+        <item>@drawable/creatorcolor17</item>
+        <item>@drawable/creatorcolor18</item>
+        <item>@drawable/creatorcolor19</item>
+        <item>@drawable/creatorcolor20</item>
+        <item>@drawable/creatorcolor21</item>
+        <item>@drawable/creatorcolor22</item>
+        <item>@drawable/creatorcolor23</item>
+        <item>@drawable/creatorcolor24</item>
+        <item>@drawable/creatorcolor25</item>
+        <item>@drawable/creatorcolor26</item>
+        <item>@drawable/creatorcolor27</item>
+        <item>@drawable/creatorcolor28</item>
+        <item>@drawable/creatorcolor29</item>
+    </array>
+
+    <string-array name="prop_color_creator_color_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+    </string-array>
+
+    <string-array name="prop_part_color_phase">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+    </string-array>
+
+    <array name="prop_part_color_phase_icon">
+        <item>@drawable/colorphase00</item>
+        <item>@drawable/colorphase01</item>
+        <item>@drawable/colorphase02</item>
+        <item>@drawable/colorphase03</item>
+        <item>@drawable/colorphase04</item>
+        <item>@drawable/colorphase05</item>
+        <item>@drawable/colorphase06</item>
+        <item>@drawable/colorphase07</item>
+        <item>@drawable/colorphase08</item>
+        <item>@drawable/colorphase09</item>
+        <item>@drawable/colorphase10</item>
+        <item>@drawable/colorphase11</item>
+        <item>@drawable/colorphase12</item>
+        <item>@drawable/colorphase13</item>
+        <item>@drawable/colorphase14</item>
+        <item>@drawable/colorphase15</item>
+        <item>@drawable/colorphase16</item>
+        <item>@drawable/colorphase17</item>
+    </array>
+
+    <string-array name="prop_part_color_phase_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+    </string-array>
+
+    <string-array name="prop_color_creator_vivid">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+    </string-array>
+
+    <string-array name="prop_color_creator_vivid_value">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+    </string-array>
+
+    <string-array name="bracketing_type">
+        <item>なし</item>
+        <item>露出補正</item>
+        <item>絞り</item>
+        <item>ISO</item>
+        <item>シャッター</item>
+        <item>ホワイトバランス</item>
+        <item>仕上がり・ピクチャーモード</item>
+    </string-array>
+
+    <string-array name="bracketing_type_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="shooting_count">
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="shooting_count_value">
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="custom_wb_selection_value">
+        <item>2000</item>
+        <item>2050</item>
+        <item>2100</item>
+        <item>2150</item>
+        <item>2200</item>
+        <item>2250</item>
+        <item>2300</item>
+        <item>2350</item>
+        <item>2400</item>
+        <item>2450</item>
+        <item>2500</item>
+        <item>2550</item>
+        <item>2600</item>
+        <item>2650</item>
+        <item>2700</item>
+        <item>2750</item>
+        <item>2800</item>
+        <item>2900</item>
+        <item>3000</item>
+        <item>3100</item>
+        <item>3200</item>
+        <item>3300</item>
+        <item>3400</item>
+        <item>3500</item>
+        <item>3600</item>
+        <item>3700</item>
+        <item>3800</item>
+        <item>3900</item>
+        <item>4000</item>
+        <item>4200</item>
+        <item>4400</item>
+        <item>4600</item>
+        <item>4800</item>
+        <item>5000</item>
+        <item>5200</item>
+        <item>5400</item>
+        <item>5600</item>
+        <item>5800</item>
+        <item>6000</item>
+        <item>6200</item>
+        <item>6400</item>
+        <item>6600</item>
+        <item>6800</item>
+        <item>7000</item>
+        <item>7400</item>
+        <item>7800</item>
+        <item>8200</item>
+        <item>8600</item>
+        <item>9000</item>
+        <item>9400</item>
+        <item>9800</item>
+        <item>10000</item>
+        <item>11000</item>
+        <item>12000</item>
+        <item>13000</item>
+        <item>14000</item>
+    </string-array>
+
+    <string-array name="custom_wb_selection">
+        <item>2000K</item>
+        <item>2050K</item>
+        <item>2100K</item>
+        <item>2150K</item>
+        <item>2200K</item>
+        <item>2250K</item>
+        <item>2300K</item>
+        <item>2350K</item>
+        <item>2400K</item>
+        <item>2450K</item>
+        <item>2500K</item>
+        <item>2550K</item>
+        <item>2600K</item>
+        <item>2650K</item>
+        <item>2700K</item>
+        <item>2750K</item>
+        <item>2800K</item>
+        <item>2900K</item>
+        <item>3000K</item>
+        <item>3100K</item>
+        <item>3200K</item>
+        <item>3300K</item>
+        <item>3400K</item>
+        <item>3500K</item>
+        <item>3600K</item>
+        <item>3700K</item>
+        <item>3800K</item>
+        <item>3900K</item>
+        <item>4000K</item>
+        <item>4200K</item>
+        <item>4400K</item>
+        <item>4600K</item>
+        <item>4800K</item>
+        <item>5000K</item>
+        <item>5200K</item>
+        <item>5400K</item>
+        <item>5600K</item>
+        <item>5800K</item>
+        <item>6000K</item>
+        <item>6200K</item>
+        <item>6400K</item>
+        <item>6600K</item>
+        <item>6800K</item>
+        <item>7000K</item>
+        <item>7400K</item>
+        <item>7800K</item>
+        <item>8200K</item>
+        <item>8600K</item>
+        <item>9000K</item>
+        <item>9400K</item>
+        <item>9800K</item>
+        <item>10000K</item>
+        <item>11000K</item>
+        <item>12000K</item>
+        <item>13000K</item>
+        <item>14000K</item>
+    </string-array>
+
+    <string-array name="frame_grid_type">
+        <item>グリッド線なし</item>
+        <item>タイプ１</item>
+        <item>タイプ２</item>
+        <item>タイプ３</item>
+        <item>タイプ４</item>
+        <item>タイプ５</item>
+        <item>タイプ６</item>
+        <item>タイプ７</item>
+        <item>タイプ８</item>
+        <item>タイプ９</item>
+        <item>タイプ１０</item>
+        <item>タイプ１１</item>
+        <item>タイプ１２</item>
+    </string-array>
+
+    <string-array name="frame_grid_type_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <array name="frame_grid_type_icon">
+        <item>@drawable/gridframe0</item>
+        <item>@drawable/gridframe11</item>
+        <item>@drawable/gridframe1</item>
+        <item>@drawable/gridframe2</item>
+        <item>@drawable/gridframe3</item>
+        <item>@drawable/gridframe4</item>
+        <item>@drawable/gridframe5</item>
+        <item>@drawable/gridframe12</item>
+        <item>@drawable/gridframe6</item>
+        <item>@drawable/gridframe7</item>
+        <item>@drawable/gridframe8</item>
+        <item>@drawable/gridframe9</item>
+        <item>@drawable/gridframe10</item>
+    </array>
+
+    <string-array name="exif_exposure_program_value">
+        <item>不明</item>
+        <item>マニュアル</item>
+        <item>プログラム</item>
+        <item>絞り優先</item>
+        <item>シャッター優先</item>
+        <item>クリエイティブ</item>
+        <item>アクション</item>
+        <item>ポートレイト</item>
+        <item>ランドスケープ</item>
+        <item>その他</item>
+    </string-array>
+
+    <string-array name="exif_metering_mode_value">
+        <item>不明</item>
+        <item>平均</item>
+        <item>中央重点</item>
+        <item>スポット</item>
+        <item>マルチスポット</item>
+        <item>分割測光</item>
+        <item>部分測光</item>
+        <item>その他</item>
+    </string-array>
+
+    <string-array name="magnifying_live_view_scale">
+        <item >段階切替(STEP)</item>
+        <item >5.0</item>
+        <item >7.0</item>
+        <item >10.0</item>
+        <item >14.0</item>
+    </string-array>
+
+    <string-array name="magnifying_live_view_scale_value">
+        <item >STEP</item>
+        <item >5.0</item>
+        <item >7.0</item>
+        <item >10.0</item>
+        <item >14.0</item>
+    </string-array>
+
+    <string-array name="self_timer_seconds">
+        <item >3秒</item>
+        <item >7秒</item>
+        <item >10秒</item>
+        <item >15秒</item>
+        <item >30秒</item>
+    </string-array>
+
+    <string-array name="self_timer_seconds_value">
+        <item >3</item>
+        <item >7</item>
+        <item >10</item>
+        <item >15</item>
+        <item >30</item>
+    </string-array>
+
+</resources>

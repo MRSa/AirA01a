@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:compat="http://schemas.android.com/apk/res-auto" >
+
+    <item android:id="@+id/action_download_movie"
+        compat:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/action_download_movie"
+        android:visible="true" >
+        <menu>
+		    <item
+		        android:id="@+id/action_download_original_movie"
+		        compat:showAsAction="never"
+		        android:title="@string/action_download_original_movie"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="@string/pref_cat_camera_off">
+      <!--
+        PreferenceScreen
+            android:enabled="false"
+            android:visibility="gone"
+            android:key="power_off"
+            android:title="@string/pref_power_off"
+      -->
+        <PreferenceScreen
+            android:key="exit_application"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="@string/pref_exit_power_off" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_camera">
+
+        <ListPreference
+            android:title="@string/pref_live_view_quality"
+            android:entryValues="@array/live_view_quality_value"
+            android:entries="@array/live_view_quality"
+            android:key="live_view_quality"
+            android:defaultValue="QVGA"/>
+
+        <CheckBoxPreference
+            android:key="touch_shutter"
+            android:title="@string/pref_touch_shutter" />
+
+        <CheckBoxPreference
+            android:key="show_preview"
+            android:title="@string/pref_show_preview" />
+
+        <ListPreference
+            android:title="@string/pref_shooting_velocity"
+            android:entryValues="@array/shooting_velocity_value"
+            android:entries="@array/shooting_velocity"
+            android:key="shooting_velocity"
+            android:defaultValue="10"/>
+
+        <ListPreference
+            android:title="@string/pref_camera_sound_volume"
+            android:entryValues="@array/sound_volume_level_value"
+            android:entries="@array/sound_volume_level"
+            android:key="sound_volume_level"
+            android:defaultValue="OFF"/>
+
+        <ListPreference
+            android:title="@string/pref_image_size"
+            android:entryValues="@array/image_size_value"
+            android:entries="@array/image_size"
+            android:key="image_size"
+            android:defaultValue="4608x3456"/>
+
+        <ListPreference
+            android:title="@string/pref_compressibility_ratio"
+            android:entryValues="@array/compressibility_ratio_value"
+            android:entries="@array/compressibility_ratio"
+            android:key="compressibility_ratio"
+            android:defaultValue="CMP_2_7"/>
+
+        <CheckBoxPreference
+            android:key="raw"
+            android:title="@string/pref_take_raw" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_feature">
+
+        <ListPreference
+            android:title="@string/pref_live_view_magnify"
+            android:entryValues="@array/magnifying_live_view_scale_value"
+            android:entries="@array/magnifying_live_view_scale"
+            android:key="live_view_scale"
+            android:defaultValue="STEP"/>
+
+        <CheckBoxPreference
+            android:key="capture_live_view"
+            android:title="@string/pref_capture_live_view" />
+<!--
+        <CheckBoxPreference
+            android:key="share_after_receive"
+            android:title="@string/pref_share_after_receive" />
+-->
+        <CheckBoxPreference
+            android:key="level_gauge"
+            android:title="@string/pref_level_gauge" />
+
+        <ListPreference
+            android:title="@string/pref_frame_grid"
+            android:entryValues="@array/frame_grid_type_value"
+            android:entries="@array/frame_grid_type"
+            android:key="frame_grid"
+            android:defaultValue="0"/>
+
+        <ListPreference
+            android:title="@string/pref_auto_bracketing"
+            android:entryValues="@array/bracketing_type_value"
+            android:entries="@array/bracketing_type"
+            android:key="auto_bracketing"
+            android:defaultValue="0"/>
+
+        <ListPreference
+            android:title="@string/pref_bracketing_count"
+            android:entryValues="@array/shooting_count_value"
+            android:entries="@array/shooting_count"
+            android:key="shooting_count"
+            android:defaultValue="3"/>
+
+        <ListPreference
+            android:title="@string/pref_self_timer_seconds"
+            android:entryValues="@array/self_timer_seconds_value"
+            android:entries="@array/self_timer_seconds"
+            android:key="self_timer_seconds"
+            android:defaultValue="3"/>
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_auto_focus_settings">
+
+        <ListPreference
+            android:title="@string/pref_af_face_scan"
+            android:entryValues="@array/face_scan_value"
+            android:entries="@array/face_scan"
+            android:key="face_scan"
+            android:defaultValue="FACE_SCAN_OFF"/>
+
+        <CheckBoxPreference
+            android:key="full_time_af"
+            android:title="@string/pref_full_time_af" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_white_balance_settings">
+
+        <ListPreference
+            android:title="@string/pref_custom_wb_selection"
+            android:entryValues="@array/custom_wb_selection_value"
+            android:entries="@array/custom_wb_selection"
+            android:key="custom_wb_temp"
+            android:defaultValue="5400"/>
+
+        <CheckBoxPreference
+            android:key="auto_wb_denkyu_colored_leaving"
+            android:title="@string/pref_wb_denkyu_colored_leaving" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_effect">
+
+        <ListPreference
+            android:title="@string/pref_color_tone"
+            android:entryValues="@array/prop_colortone_value"
+            android:entries="@array/prop_colortone"
+            android:key="color_tone"
+            android:defaultValue="I_FINISH"/>
+
+        <ListPreference
+            android:title="@string/pref_recently_art_filter"
+            android:entryValues="@array/recently_art_filter_value"
+            android:entries="@array/recently_art_filter"
+            android:key="recently_art_filter"
+            android:defaultValue="POPART"/>
+
+        <!--
+            <PreferenceScreen
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:title="@string/pref_art_filter">
+
+                <PreferenceCategory
+                    android:title="@string/pref_cat_art_filter_bracketing">
+
+                    <CheckBoxPreference
+                        android:key="bracket_pict_popart"
+                        android:title="@string/bkt_pict_popart" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_fantasic_focus"
+                        android:title="@string/bkt_pict_fantasic_focus" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_daydream"
+                        android:title="@string/bkt_pict_daydream" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_light_tone"
+                        android:title="@string/bkt_pict_light_tone" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_rough_monochrome"
+                        android:title="@string/bkt_pict_rough_monochrome" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_toy_photo"
+                        android:title="@string/bkt_pict_toy_photo" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_miniature"
+                        android:title="@string/bkt_pict_miniature" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_cross_process"
+                        android:title="@string/bkt_pict_cross_process" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_gentle_sepia"
+                        android:title="@string/bkt_pict_gentle_sepia" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_dramatic_tone"
+                        android:title="@string/bkt_pict_dramatic_tone" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_ligne_clair"
+                        android:title="@string/bkt_pict_ligne_clair" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_pastel"
+                        android:title="@string/bkt_pict_pastel" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_vintage"
+                        android:title="@string/bkt_pict_vintage" />
+                    <CheckBoxPreference
+                        android:key="bracket_pict_partcolor"
+                        android:title="@string/bkt_pict_partcolor" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+    -->
+    <!--
+        <PreferenceScreen
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:title="@string/pref_tone_control">
+
+            <ListPreference
+                android:title="@string/pref_tone_control_low"
+                android:entryValues="@array/prop_tone_control_value"
+                android:entries="@array/prop_tone_control"
+                android:key="tone_control_low"
+                android:defaultValue="0"/>
+
+            <ListPreference
+                android:title="@string/pref_tone_control_middle"
+                android:entryValues="@array/prop_tone_control_value"
+                android:entries="@array/prop_tone_control"
+                android:key="tone_control_middle"
+                android:defaultValue="0"/>
+
+            <ListPreference
+                android:title="@string/pref_tone_control_high"
+                android:entryValues="@array/prop_tone_control_value"
+                android:entries="@array/prop_tone_control"
+                android:key="tone_control_high"
+                android:defaultValue="0"/>
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:title="@string/pref_monotone">
+
+            <ListPreference
+                android:title="@string/pref_monotonefilter_monochrome"
+                android:entryValues="@array/prop_monotone_filter_value"
+                android:entries="@array/prop_monotone_filter"
+                android:key="monotonefilter_monochrome"
+                android:defaultValue="NORMAL"/>
+
+            <ListPreference
+                android:title="@string/pref_monotonefilter_rough_monochrome"
+                android:entryValues="@array/prop_monotone_filter_value"
+                android:entries="@array/prop_monotone_filter"
+                android:key="monotonefilter_rough_monochrome"
+                android:defaultValue="NORMAL"/>
+
+            <ListPreference
+                android:title="@string/pref_monotonefilter_dramatic_tone"
+                android:entryValues="@array/prop_monotone_filter_value"
+                android:entries="@array/prop_monotone_filter"
+                android:key="monotonefilter_dramatic_tone"
+                android:defaultValue="NORMAL"/>
+
+            <ListPreference
+                android:title="@string/pref_monotonecolor_monochrome"
+                android:entryValues="@array/prop_monotone_color_value"
+                android:entries="@array/prop_monotone_color"
+                android:key="monotonecolor_monochrome"
+                android:defaultValue="NORMAL"/>
+
+            <ListPreference
+                android:title="@string/pref_monotonecolor_rough_monochrome"
+                android:entryValues="@array/prop_monotone_color_value"
+                android:entries="@array/prop_monotone_color"
+                android:key="monotonecolor_rough_monochrome"
+                android:defaultValue="NORMAL"/>
+
+            <ListPreference
+                android:title="@string/pref_monotonecolor_dramatic_tone"
+                android:entryValues="@array/prop_monotone_color_value"
+                android:entries="@array/prop_monotone_color"
+                android:key="monotonecolor_dramatic_tone"
+                android:defaultValue="NORMAL"/>
+
+        </PreferenceScreen>
+
+    -->
+        <!-- -->
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_monotone">
+
+        <ListPreference
+            android:title="@string/pref_monotonefilter_monochrome"
+            android:entryValues="@array/prop_monotone_filter_value"
+            android:entries="@array/prop_monotone_filter"
+            android:key="monotonefilter_monochrome"
+            android:defaultValue="NORMAL"/>
+
+        <ListPreference
+            android:title="@string/pref_monotonecolor_monochrome"
+            android:entryValues="@array/prop_monotone_color_value"
+            android:entries="@array/prop_monotone_color"
+            android:key="monotonecolor_monochrome"
+            android:defaultValue="NORMAL"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_color_creator">
+
+        <ListPreference
+            android:title="@string/pref_color_creator_color"
+            android:entryValues="@array/prop_color_creator_color_value"
+            android:entries="@array/prop_color_creator_color"
+            android:key="color_creator_color"
+            android:defaultValue="0"/>
+
+        <ListPreference
+            android:title="@string/pref_color_creator_vivid"
+            android:entryValues="@array/prop_color_creator_vivid_value"
+            android:entries="@array/prop_color_creator_vivid"
+            android:key="color_creator_vivid"
+            android:defaultValue="0"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_part_color_settings">
+
+        <ListPreference
+            android:title="@string/pref_part_color_phase"
+            android:entryValues="@array/prop_part_color_phase_value"
+            android:entries="@array/prop_part_color_phase"
+            android:key="color_phase"
+            android:defaultValue="0"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_bluetooth">
+
+        <CheckBoxPreference
+            android:key="ble_power_on"
+            android:title="@string/pref_bluetooth_power_on"
+            android:summary="@string/pref_summary_bluetooth_power_on" />
+
+        <PreferenceScreen
+            android:key="olympus_air_bt"
+            android:title="@string/pref_air_bt"
+            android:summary="@string/pref_summary_air_bt" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_info">
+
+        <PreferenceScreen
+            android:key="focal_length"
+            android:title="@string/pref_focal_length"
+            android:selectable="false" />
+
+        <PreferenceScreen
+            android:key="lens_status"
+            android:title="@string/pref_lens_status"
+            android:selectable="false" />
+
+        <PreferenceScreen
+            android:key="media_status"
+            android:title="@string/pref_media_status"
+            android:selectable="false" />
+
+        <PreferenceScreen
+            android:key="camera_version"
+            android:title="@string/pref_camera_version"
+            android:selectable="false" />
+
+        <PreferenceScreen
+        android:key="camerakit_version"
+        android:title="@string/pref_camerakit_version"
+        android:selectable="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_gokigen">
+        <Preference
+            android:key="instruction_link"
+            android:title="@string/pref_instruction_manual"
+            android:summary="https://ja.osdn.net/projects/gokigen/wiki/AirA01a"
+            android:selectable="true">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://ja.osdn.net/projects/gokigen/wiki/AirA01a" />
+        </Preference>
+        <Preference
+            android:key="privacy_policy"
+            android:title="@string/pref_privacy_policy"
+            android:summary="https://osdn.net/projects/gokigen/wiki/PrivacyPolicy"
+            android:selectable="true">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://osdn.net/projects/gokigen/wiki/PrivacyPolicy" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
