@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "jp.osdn.gokigen.aira01a"
         minSdkVersion 14
-        targetSdkVersion 34
+        targetSdkVersion 35
         versionCode 32
         versionName "1.9.2"
     }
