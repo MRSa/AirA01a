@@ -200,4 +200,5 @@
     <string name="dialog_delete_message">指定したファイルを削除中です。しばらくお待ちください。</string>
 
     <string name="pref_self_timer_seconds">セルフタイマー秒数</string>
+    <string name="permission_not_granted">許可が得られませんでしたので、終了します。</string>
 </resources>

@@ -198,4 +198,5 @@
     <string name="dialog_delete_message">FILE DELETING, PLEASE WAIT.</string>
 
     <string name="pref_self_timer_seconds">Self timer Seconds.</string>
+    <string name="permission_not_granted">Permissions not granted by the user.</string>
 </resources>

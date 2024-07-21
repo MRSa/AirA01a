@@ -309,7 +309,7 @@ public class CameraConnectCoordinator implements OLYCameraConnectionListener
         void onCameraConnectFatalError(String message);
     }
 
-    interface IStatusView
+    public interface IStatusView
     {
         void setInformationText(String message);
     }
