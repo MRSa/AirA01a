@@ -9,7 +9,8 @@ android {
         minSdkVersion 14
         targetSdkVersion 35
         versionCode 33
-        versionName "1.9.2"
+        versionName "1.9.3"
+        multiDexEnabled true
     }
     buildTypes {
         release {
