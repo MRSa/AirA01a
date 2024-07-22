@@ -26,7 +26,7 @@ import jp.osdn.gokigen.aira01a.R;
 public class PowerOnCamera implements ICameraPowerOn
 {
     private final String TAG = toString();
-    private final int BLE_SCAN_TIMEOUT_MILLIS = 5 * 1000; // 5秒間
+    private final int BLE_SCAN_TIMEOUT_MILLIS = 10 * 1000; // 10秒間
     private final int BLE_WAIT_DURATION  = 100;             // 100ms間隔
     private final Activity context;
     private final OLYCamera camera;

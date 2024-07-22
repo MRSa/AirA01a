@@ -8,6 +8,7 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.os.Build;
 import android.util.Log;
 
 import java.util.concurrent.Executor;
@@ -18,6 +19,7 @@ import jp.co.olympus.camerakit.OLYCameraConnectionListener;
 import jp.co.olympus.camerakit.OLYCameraKitException;
 import jp.osdn.gokigen.aira01a.connection.ble.ICameraPowerOn;
 import jp.osdn.gokigen.aira01a.connection.ble.PowerOnCamera;
+import jp.osdn.gokigen.aira01a.connection.ble.PowerOnCameraLP;
 import jp.osdn.gokigen.aira01a.myprops.CameraPropertyBackupRestore;
 import jp.osdn.gokigen.aira01a.R;
 
@@ -62,7 +64,15 @@ public class CameraConnectCoordinator implements OLYCameraConnectionListener
         camera.setConnectionListener(this);
 
         propertyBackupRestore = new CameraPropertyBackupRestore(context, camera);
-        cameraPowerOn = new PowerOnCamera(context, camera);
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP)
+        {
+            cameraPowerOn = new PowerOnCamera(context, camera);
+        }
+        else
+        {
+            cameraPowerOn = new PowerOnCameraLP(context, camera);
+        }
+
 
         connectionReceiver = new BroadcastReceiver() {
             @Override

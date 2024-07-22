@@ -401,18 +401,18 @@
         <Preference
             android:key="instruction_link"
             android:title="@string/pref_instruction_manual"
-            android:summary="https://ja.osdn.net/projects/gokigen/wiki/AirA01a"
+            android:summary="https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01a/Readme.md"
             android:selectable="true">
             <intent android:action="android.intent.action.VIEW"
-                android:data="https://ja.osdn.net/projects/gokigen/wiki/AirA01a" />
+                android:data="https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01a/Readme.md" />
         </Preference>
         <Preference
             android:key="privacy_policy"
             android:title="@string/pref_privacy_policy"
-            android:summary="https://osdn.net/projects/gokigen/wiki/PrivacyPolicy"
+            android:summary="https://github.com/MRSa/GokigenOSDN_documents/blob/main/PrivacyPolicy.md"
             android:selectable="true">
             <intent android:action="android.intent.action.VIEW"
-                android:data="https://osdn.net/projects/gokigen/wiki/PrivacyPolicy" />
+                android:data="https://github.com/MRSa/GokigenOSDN_documents/blob/main/PrivacyPolicy.md" />
         </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
