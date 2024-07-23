@@ -70,52 +70,6 @@ class MainActivity : AppCompatActivity(), ICameraCallback, PowerOnCameraCallback
             coordinator = CameraConnectCoordinator(this, this)
         }
 
-/*
-        // 外部メモリアクセス権のオプトイン
-        if ((ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
-            ) != PackageManager.PERMISSION_GRANTED) ||
-            (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_NETWORK_STATE
-            ) != PackageManager.PERMISSION_GRANTED) ||
-            (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_WIFI_STATE
-            ) != PackageManager.PERMISSION_GRANTED) ||
-            (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.BLUETOOTH
-            ) != PackageManager.PERMISSION_GRANTED) ||
-            (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.BLUETOOTH_ADMIN
-            ) != PackageManager.PERMISSION_GRANTED) ||
-            (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_COARSE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED) ||
-            (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.INTERNET
-            ) != PackageManager.PERMISSION_GRANTED)
-        ) {
-            ActivityCompat.requestPermissions(
-                this,
-                arrayOf(
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                    Manifest.permission.ACCESS_NETWORK_STATE,
-                    Manifest.permission.ACCESS_WIFI_STATE,
-                    Manifest.permission.BLUETOOTH,
-                    Manifest.permission.BLUETOOTH_ADMIN,
-                    Manifest.permission.ACCESS_COARSE_LOCATION,
-                    Manifest.permission.INTERNET,
-                ),
-                REQUEST_NEED_PERMISSIONS
-            )
-        }
-*/
         try
         {
             ///////// SET PERMISSIONS /////////
