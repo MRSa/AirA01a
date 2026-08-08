@@ -98,7 +98,7 @@ class LargeFileDownloaderFromOPC(private val activity: FragmentActivity, private
     {
         val file = content.fileInfo
         var isVideo = false
-        var targetFileName = file.filename.toUpperCase(Locale.US)
+        var targetFileName = file.filename.uppercase(Locale.US)
         if (content.hasRaw())
         {
             targetFileName = targetFileName.replace(".JPG", ".ORF")
@@ -109,7 +109,7 @@ class LargeFileDownloaderFromOPC(private val activity: FragmentActivity, private
         val baseName: String = targetFileName.substring(0, periodPosition)
 
         receivedSize = 0
-        fileName = "$baseName-$extendName$extension".toUpperCase(Locale.US)
+        fileName = "$baseName-$extendName$extension".uppercase(Locale.US)
         Log.v(TAG, "startDownload() : $fileName")
 
         isShareContent = isShare

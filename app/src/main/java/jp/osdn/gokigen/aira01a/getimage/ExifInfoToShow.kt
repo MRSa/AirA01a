@@ -96,7 +96,8 @@ class ExifInfoToShow(private val activity: FragmentActivity, information: ExifIn
 
                 // ISO感度
                 msg += activity.getString(R.string.exif_iso_title)
-                msg += " ${getExifAttribute(exifInterface, ExifInterface.TAG_ISO_SPEED_RATINGS)}\r\n"
+                msg += " ${getExifAttribute(exifInterface, ExifInterface.TAG_PHOTOGRAPHIC_SENSITIVITY)}\r\n"
+                //msg += " ${getExifAttribute(exifInterface, ExifInterface.TAG_ISO_SPEED_RATINGS)}\r\n"
 
                 // カメラの製造元
                 msg += activity.getString(R.string.exif_maker_title)
@@ -106,7 +107,7 @@ class ExifInfoToShow(private val activity: FragmentActivity, information: ExifIn
                 msg += activity.getString(R.string.exif_camera_title)
                 msg += " ${getExifAttribute(exifInterface, ExifInterface.TAG_MODEL)}\r\n"// (string)
                 val lat = getExifAttribute(exifInterface, ExifInterface.TAG_GPS_LATITUDE)
-                if (lat != null && lat.length > 0)
+                if (lat != null && lat.isNotEmpty())
                 {
                     // 「位置情報あり」と表示
                     msg += "${activity.getString(R.string.exif_with_gps)} \r\n"
