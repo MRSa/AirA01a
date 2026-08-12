@@ -140,13 +140,13 @@ class JpegDownloaderFromOPC(private val activity: FragmentActivity, private val 
     fun startDownload(content: OLYCameraContentInfoEx, downloadImageSize: Float, isShare: Boolean)
     {
         val file = content.fileInfo
-        val targetFileName = file.filename.toUpperCase(Locale.US)
+        val targetFileName = file.filename.uppercase(Locale.US)
         val extendName = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Calendar.getInstance().time)
         val periodPosition: Int = targetFileName.indexOf(".")
         val extension: String = targetFileName.substring(periodPosition)
         val baseName: String = targetFileName.substring(0, periodPosition)
 
-        fileName = "$baseName-$extendName$extension".toUpperCase(Locale.US)
+        fileName = "$baseName-$extendName$extension".uppercase(Locale.US)
         Log.v(TAG, "startDownload() : $fileName")
 
         isShareContent = isShare
